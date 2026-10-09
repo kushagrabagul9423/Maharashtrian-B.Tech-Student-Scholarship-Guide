@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maharashtra B.Tech Scholarship Portal | MahaDBT Assistant</title>
+  <meta name="description" content="Official guidance portal for Maharashtra B.Tech engineering students to find MahaDBT government schemes for Tuition, Hostel & Maintenance allowances.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%220%22%20100%20100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Configuration for Gov-Tech Theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            saffron: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              300: '#fdba74',
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+              800: '#9a3412',
+              900: '#7c2d12',
+              DEFAULT: '#E85D04'
+            },
+            govnavy: {
+              50: '#f0f4f8',
+              100: '#d9e2ec',
+              200: '#bcccdc',
+              300: '#9fb3c8',
+              400: '#627d98',
+              500: '#486581',
+              600: '#334e68',
+              700: '#243b53',
+              800: '#13315C',
+              900: '#0B2545',
+              950: '#06172d',
+              DEFAULT: '#0B2545'
+            },
+            govemrald: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              DEFAULT: '#059669'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col antialiased selection:bg-orange-200 selection:text-orange-900">
+
+  <!-- ================= TOP GOV TRICOLOR STRIP ================= -->
+  <div class="gov-tricolor-strip sticky top-0 z-50"></div>
+
+  <!-- ================= TOP NOTICE BAR ================= -->
+  <div class="bg-govnavy-950 text-slate-300 text-xs py-1.5 px-4 border-b border-govnavy-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-medium text-slate-200">MahaDBT Technical Education Window 2024-25 / 2025-26</span>
+        <span class="hidden sm:inline text-slate-400">| Direct Benefit Transfer (DBT) Portal</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <a href="#eligibility-calculator" class="hover:text-white transition flex items-center gap-1 font-medium text-amber-300">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          Quick Eligibility Calculator
+        </a>
+        <span class="text-slate-600">|</span>
+        <span class="hidden md:inline">Helpline: <strong class="text-white">1800 102 5311</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 1. HERO HEADER SECTION ================= -->
+  <header class="gov-bg-pattern text-white border-b border-govnavy-800 shadow-xl relative overflow-hidden">
+    <!-- Decorative Glow Circles -->
+    <div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-orange-500/10 blur-3xl pointer-events-none"></div>
+    <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 relative z-10">
+      <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+        
+        <!-- Left: Emblem & Titles -->
+        <div class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-5">
+          <!-- Mock State Emblem / Logo Placeholder -->
+          <div class="relative group">
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-100 p-1.5 shadow-lg border-2 border-amber-400/60 flex items-center justify-center shrink-0">
+              <div class="w-full h-full rounded-xl bg-white border border-amber-200 flex flex-col items-center justify-center p-1 text-center shadow-inner">
+                <!-- State Seal / Emblem Graphic -->
+                <svg class="w-9 h-9 text-saffron-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.5m-15 10.5V10.5m-1.5 0h18" />
+                  <circle cx="12" cy="7" r="1.5" fill="currentColor"/>
+                </svg>
+                <span class="text-[9px] font-bold text-govnavy-900 leading-tight uppercase font-marathi mt-0.5">महाराष्ट्र शासन</span>
+                <span class="text-[7.5px] font-semibold text-slate-600 tracking-tighter">GOVT OF MAHARASHTRA</span>
+              </div>
+            </div>
+            <!-- Ashoka Chakra Mini Badge -->
+            <div class="absolute -bottom-1 -right-1 bg-govnavy-900 border border-amber-300 text-amber-300 text-[10px] rounded-full px-1.5 py-0.5 font-bold shadow">
+              DTE
+            </div>
+          </div>
+
+          <!-- Titles -->
+          <div class="space-y-1.5 max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/15 text-xs text-amber-300 font-medium">
+              <span class="w-2 h-2 rounded-full bg-saffron-500"></span>
+              Higher & Technical Education Directorate • MahaDBT Guide
+            </div>
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white leading-tight">
+              Maharashtrian B.Tech Student Scholarship Guide
+            </h1>
+            <p class="text-sm sm:text-base text-slate-300 max-w-xl font-normal leading-relaxed">
+              Find MahaDBT government schemes for Tuition, Hostel & Maintenance allowances.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Fast Gov Stats Pill -->
+        <div class="w-full md:w-auto flex md:flex-col justify-around md:justify-center gap-3 bg-white/5 backdrop-blur-md p-4 rounded-2xl border border-white/10 text-center md:text-right shrink-0">
+          <div>
+            <div class="text-xs text-slate-300 uppercase tracking-wider font-medium">Tuition Waiver Up To</div>
+            <div class="text-xl sm:text-2xl font-black text-amber-400">100% Coverage</div>
+          </div>
+          <div class="h-auto w-px bg-white/10 md:w-full md:h-px my-0.5"></div>
+          <div>
+            <div class="text-xs text-slate-300 uppercase tracking-wider font-medium">Hostel Allowance Up To</div>
+            <div class="text-xl sm:text-2xl font-black text-emerald-400">₹51,000 / Year</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Search & Filter Controls Ribbon -->
+      <div class="mt-8 pt-6 border-t border-white/10 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
+        <!-- Live Keyword Search -->
+        <div class="relative flex-1 max-w-xl">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <input 
+            type="text" 
+            id="search-input"
+            placeholder="Search scheme (e.g., 'Panjabrao Deshmukh', 'OBC', 'Hostel', 'Tuition Waiver')..." 
+            class="w-full pl-11 pr-10 py-3 bg-white/10 backdrop-blur border border-white/20 rounded-xl text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-saffron-500 focus:bg-white/15 transition shadow-inner"
+          >
+          <button id="clear-search-btn" class="hidden absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-white" title="Clear search">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <!-- Assistance Type Toggle -->
+        <div class="flex items-center gap-2 bg-white/10 p-1.5 rounded-xl border border-white/15 overflow-x-auto text-xs font-semibold">
+          <button data-assistance="ALL" class="assistance-filter-btn px-3 py-2 rounded-lg bg-white text-govnavy-900 shadow font-bold transition">
+            All Assistance
+          </button>
+          <button data-assistance="Education" class="assistance-filter-btn px-3 py-2 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition">
+            🎓 Tuition & Exams
+          </button>
+          <button data-assistance="Stay & Food" class="assistance-filter-btn px-3 py-2 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition">
+            🏠 Hostel & Living
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT CONTAINER ================= -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full space-y-10">
+
+    <!-- ================= STEP 1: CASTE / CATEGORY FILTER BAR ================= -->
+    <section class="space-y-4 filter-section">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+        <div>
+          <div class="text-xs font-bold tracking-wider uppercase text-saffron-600 flex items-center gap-1.5">
+            <span class="flex items-center justify-center w-5 h-5 rounded-full bg-saffron-100 text-saffron-700 text-xs font-bold">1</span>
+            Step 1: Reservation & Category Selection
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold text-govnavy-900 mt-0.5">
+            Select Your Caste / Category
+          </h2>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-500">
+          Showing schemes matching: <span id="current-category-name" class="font-bold text-govnavy-900">All Categories</span> 
+          (<span id="schemes-counter" class="font-bold text-saffron-600">12 Schemes</span>)
+        </p>
+      </div>
+
+      <!-- Category Filter Pills Grid / Scroll -->
+      <div id="category-pills-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-2.5 sm:gap-3">
+        <!-- Injected via JavaScript from CATEGORIES_CONFIG in data.js -->
+      </div>
+    </section>
+
+    <!-- ================= STEP 2: FILTERED SCHOLARSHIP CARDS GRID ================= -->
+    <section class="space-y-5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <div class="text-xs font-bold tracking-wider uppercase text-emerald-700 flex items-center gap-1.5">
+            <span class="flex items-center justify-center w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">2</span>
+            Step 2: Matching MahaDBT Schemes
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-govnavy-900">
+            Available Schemes for B.Tech Candidates
+          </h3>
+        </div>
+
+        <!-- Quick filter info badge -->
+        <div id="filter-status-tag" class="inline-flex items-center gap-2 px-3 py-1.5 bg-slate-100 border border-slate-200 rounded-lg text-xs font-medium text-slate-600">
+          <span>Displaying all official technical education schemes</span>
+        </div>
+      </div>
+
+      <!-- Dynamic Cards Grid -->
+      <div id="scholarships-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Empty State if filters yield no results -->
+      <div id="empty-state" class="hidden text-center py-16 px-4 bg-white rounded-2xl border border-dashed border-slate-300">
+        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-amber-50 text-amber-500 flex items-center justify-center">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-slate-800 mb-1">No Matching Scholarships Found</h3>
+        <p class="text-sm text-slate-500 max-w-md mx-auto mb-5">
+          We couldn't find any scholarship matching your current filter and search keyword criteria.
+        </p>
+        <button id="reset-filters-btn" class="px-5 py-2.5 bg-govnavy-900 text-white rounded-xl text-sm font-semibold hover:bg-govnavy-800 transition shadow">
+          Reset All Filters
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= INTERACTIVE ELIGIBILITY ESTIMATOR SECTION ================= -->
+    <section id="eligibility-calculator" class="bg-gradient-to-br from-govnavy-900 via-govnavy-800 to-govnavy-950 text-white rounded-3xl p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden border border-govnavy-700">
+      <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-5 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 text-xs font-semibold border border-amber-400/30">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            Instant MahaDBT Estimator
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold leading-tight">
+            Check Your B.Tech Fee & Hostel Benefits in 30 Seconds
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Enter your family annual income from Tahsildar certificate and select your accommodation status to instantly see which Maharashtra government schemes you qualify for.
+          </p>
+          <div class="flex items-center gap-4 pt-2 text-xs text-slate-300">
+            <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> CAP Round Compliant</span>
+            <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> FRA Approved Fee Rates</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-white text-slate-900 rounded-2xl p-6 sm:p-7 shadow-xl">
+          <form id="calculator-form" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Select Category -->
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                  1. Your Category
+                </label>
+                <select id="calc-category" class="w-full bg-slate-50 border border-slate-300 text-slate-900 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:ring-2 focus:ring-saffron-500 focus:outline-none">
+                  <option value="SC">SC (Scheduled Caste)</option>
+                  <option value="ST">ST (Scheduled Tribe)</option>
+                  <option value="OBC" selected>OBC (Other Backward Class)</option>
+                  <option value="SEBC">SEBC (Socially & Educationally Backward)</option>
+                  <option value="EWS">EWS / Open (EBC)</option>
+                  <option value="NT">NT / VJNT (A, B, C, D)</option>
+                  <option value="PwD">PwD (Divyangjan)</option>
+                </select>
+              </div>
+
+              <!-- Annual Income Input -->
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                  2. Annual Family Income (₹)
+                </label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400 font-bold text-sm">₹</span>
+                  <input 
+                    type="number" 
+                    id="calc-income" 
+                    value="250000" 
+                    step="25000"
+                    min="0"
+                    max="2000000"
+                    placeholder="e.g. 250000"
+                    class="w-full pl-8 pr-3 py-2.5 bg-slate-50 border border-slate-300 text-slate-900 rounded-xl text-sm font-semibold focus:ring-2 focus:ring-saffron-500 focus:outline-none"
+                  >
+                </div>
+                <div class="text-[11px] text-slate-500 mt-1 flex justify-between">
+                  <span>Below 1L / 2.5L / 8L Slabs</span>
+                  <span id="income-slab-label" class="font-semibold text-emerald-600">Eligible for 50%-100%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accommodation Type -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                3. Living & Accommodation Status
+              </label>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition bg-slate-50/50">
+                  <input type="radio" name="calc-living" value="hostel-metro" checked class="text-saffron-600 focus:ring-saffron-500">
+                  <div class="text-xs">
+                    <span class="font-bold block text-slate-800">Hostel (Metro)</span>
+                    <span class="text-slate-500 text-[11px]">MMR, Pune, Nagpur</span>
+                  </div>
+                </label>
+                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
+                  <input type="radio" name="calc-living" value="hostel-district" class="text-saffron-600 focus:ring-saffron-500">
+                  <div class="text-xs">
+                    <span class="font-bold block text-slate-800">Hostel (District)</span>
+                    <span class="text-slate-500 text-[11px]">Other cities / Towns</span>
+                  </div>
+                </label>
+                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
+                  <input type="radio" name="calc-living" value="dayscholar" class="text-saffron-600 focus:ring-saffron-500">
+                  <div class="text-xs">
+                    <span class="font-bold block text-slate-800">Day Scholar</span>
+                    <span class="text-slate-500 text-[11px]">Commuting from Home</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Calculated Output Box -->
+            <div id="calc-result-box" class="bg-amber-50/70 border border-amber-200 rounded-xl p-4 text-xs space-y-2">
+              <!-- Dynamically populated by JS -->
+            </div>
+
+            <div class="flex items-center justify-end gap-3 pt-1">
+              <button 
+                type="button" 
+                id="calc-apply-filter-btn" 
+                class="w-full py-3 px-5 bg-saffron-600 hover:bg-saffron-700 text-white rounded-xl text-sm font-bold shadow-md hover:shadow-lg transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                View Eligible Schemes in Grid
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= STEP 4 (PREVIEW): FAQ & STUDENT COMPLIANCE GUIDE ================= -->
+    <section id="faq-section" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-bold text-saffron-600 uppercase tracking-wider">MahaDBT B.Tech FAQs</span>
+          <h3 class="text-xl font-bold text-govnavy-900 mt-0.5">Crucial Guidelines for Engineering Candidates</h3>
+        </div>
+        <span class="text-xs bg-slate-100 text-slate-700 px-3 py-1 rounded-full font-medium hidden sm:inline">
+          DTE & Social Welfare Compliant
+        </span>
+      </div>
+
+      <div id="faqs-accordion-container" class="space-y-3">
+        <!-- Injected via JavaScript from SCHOLARSHIP_FAQS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= 3. STEP 3 & 4: DETAILED SCHOLARSHIP DRAWER / MODAL VIEW ================= -->
+  <div 
+    id="scholarship-modal" 
+    class="fixed inset-0 z-50 hidden overflow-y-auto"
+    aria-labelledby="modal-title" 
+    role="dialog" 
+    aria-modal="true"
+  >
+    <!-- Backdrop Blur Overlay -->
+    <div id="modal-backdrop" class="fixed inset-0 bg-govnavy-950/70 backdrop-blur-sm transition-opacity modal-backdrop-anim"></div>
+
+    <div class="flex min-h-full items-center justify-center p-3 sm:p-6 text-center">
+      
+      <!-- Modal Panel Container -->
+      <div class="modal-container relative transform overflow-hidden rounded-3xl bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-4xl border border-slate-200 modal-content-anim">
+        
+        <!-- Modal Top Bar Header -->
+        <div class="gov-tricolor-strip"></div>
+        <div class="bg-gradient-to-r from-govnavy-900 to-govnavy-800 text-white p-5 sm:p-7 relative">
+          
+          <!-- Close Button Top Right -->
+          <button 
+            id="modal-close-btn" 
+            type="button" 
+            class="absolute top-5 right-5 text-slate-300 hover:text-white bg-white/10 hover:bg-white/20 rounded-full p-2 transition focus:outline-none"
+            aria-label="Close modal"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+
+          <!-- Back to List Quick Pill -->
+          <button 
+            id="modal-back-top-btn" 
+            type="button"
+            class="inline-flex items-center gap-1.5 text-xs text-amber-300 hover:text-amber-200 font-semibold mb-3 transition"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+            ← Back to Scholarship List
+          </button>
+
+          <!-- Scheme Badges -->
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span id="modal-scheme-code" class="px-2.5 py-0.5 rounded-md bg-amber-400 text-govnavy-900 font-bold text-xs">
+              SJD-SC-01
+            </span>
+            <span id="modal-category-badge" class="px-2.5 py-0.5 rounded-md bg-white/15 text-white text-xs font-semibold">
+              SC Category
+            </span>
+            <span id="modal-type-badge" class="px-2.5 py-0.5 rounded-md bg-emerald-500/25 text-emerald-300 border border-emerald-400/30 text-xs font-semibold">
+              Tuition & Exam Waiver
+            </span>
+          </div>
+
+          <!-- Scheme Title & Department -->
+          <h2 id="modal-title" class="text-xl sm:text-2xl font-black text-white leading-tight">
+            Government of India Post-Matric Scholarship for SC Students
+          </h2>
+          <p id="modal-marathi-title" class="text-xs sm:text-sm text-slate-300 font-marathi mt-1">
+            भारत सरकार मॅट्रिकोत्तर शिष्यवृत्ती - अनुसूचित जाती
+          </p>
+          <div class="flex items-center gap-2 mt-3 text-xs text-slate-300">
+            <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            <span id="modal-department">Social Justice and Special Assistance Department</span>
+          </div>
+        </div>
+
+        <!-- 3 Visual Tabs Navigation Bar -->
+        <div class="border-b border-slate-200 bg-slate-50 px-5 sm:px-7 flex overflow-x-auto gap-2">
+          <button 
+            data-tab="tab-eligibility" 
+            class="modal-tab-btn py-3.5 px-4 font-bold text-sm border-b-2 border-saffron-600 text-saffron-600 flex items-center gap-2 transition shrink-0"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            1. Eligibility Criteria
+          </button>
+          <button 
+            data-tab="tab-documents" 
+            class="modal-tab-btn py-3.5 px-4 font-semibold text-sm border-b-2 border-transparent text-slate-600 hover:text-govnavy-900 flex items-center gap-2 transition shrink-0"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            2. Documents Checklist
+            <span id="modal-docs-count-pill" class="ml-1 text-[11px] px-2 py-0.5 rounded-full bg-slate-200 text-slate-700">8 items</span>
+          </button>
+          <button 
+            data-tab="tab-benefits" 
+            class="modal-tab-btn py-3.5 px-4 font-semibold text-sm border-b-2 border-transparent text-slate-600 hover:text-govnavy-900 flex items-center gap-2 transition shrink-0"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            3. Benefits & Allowances
+          </button>
+        </div>
+
+        <!-- Modal Body Content Areas (3 Visual Boxes/Tabs) -->
+        <div class="p-5 sm:p-7 max-h-[60vh] overflow-y-auto space-y-6">
+
+          <!-- TAB 1: ELIGIBILITY CRITERIA -->
+          <div id="tab-eligibility" class="modal-tab-pane space-y-5">
+            <!-- Key Highlight Callout -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="bg-orange-50 border border-orange-200 rounded-xl p-3.5">
+                <div class="text-[11px] font-bold uppercase tracking-wider text-saffron-700">Annual Family Income</div>
+                <div id="modal-income-highlight" class="text-sm font-extrabold text-govnavy-900 mt-1">
+                  Up to ₹2,50,000 / Year
+                </div>
+              </div>
+              <div class="bg-blue-50 border border-blue-200 rounded-xl p-3.5">
+                <div class="text-[11px] font-bold uppercase tracking-wider text-blue-700">Domicile Status</div>
+                <div class="text-sm font-extrabold text-govnavy-900 mt-1">
+                  Maharashtra State (Mandatory)
+                </div>
+              </div>
+              <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3.5">
+                <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-700">Course & Quota</div>
+                <div class="text-sm font-extrabold text-govnavy-900 mt-1">
+                  B.Tech via State CET CAP Quota
+                </div>
+              </div>
+            </div>
+
+            <!-- Detailed Rules List -->
+            <div>
+              <h4 class="text-sm font-bold text-govnavy-900 uppercase tracking-wider mb-3 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-saffron-600"></span>
+                Official Eligibility Norms (Government Resolutions)
+              </h4>
+              <ul id="modal-eligibility-list" class="space-y-2.5 text-sm text-slate-700">
+                <!-- Injected via JavaScript -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- TAB 2: DOCUMENTS REQUIRED CHECKLIST -->
+          <div id="tab-documents" class="modal-tab-pane hidden space-y-5">
+            
+            <!-- Checklist Progress Banner -->
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div class="space-y-1">
+                <div class="flex items-center gap-2 text-xs font-bold text-govnavy-900 uppercase tracking-wider">
+                  <span>Application Readiness Tracker</span>
+                  <span id="docs-progress-text" class="text-saffron-600 font-extrabold">(0 of 8 ready)</span>
+                </div>
+                <p class="text-xs text-slate-500">
+                  Tick documents you have ready. Your checklist is saved locally on your browser.
+                </p>
+              </div>
+              <div class="flex items-center gap-2">
+                <button id="copy-docs-btn" class="px-3 py-1.5 bg-white border border-slate-300 hover:border-slate-400 rounded-lg text-xs font-semibold text-slate-700 shadow-sm transition flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                  Copy List
+                </button>
+                <button id="print-checklist-btn" class="px-3 py-1.5 bg-govnavy-900 hover:bg-govnavy-800 text-white rounded-lg text-xs font-semibold shadow-sm transition flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                  Print / Save
+                </button>
+              </div>
+            </div>
+
+            <!-- Documents Itemized Checkbox List -->
+            <div id="modal-documents-list" class="space-y-2.5">
+              <!-- Injected via JavaScript -->
+            </div>
+          </div>
+
+          <!-- TAB 3: BENEFITS & FINANCIAL ASSISTANCE -->
+          <div id="tab-benefits" class="modal-tab-pane hidden space-y-5">
+            <div id="modal-benefits-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Injected via JavaScript -->
+            </div>
+
+            <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-xs text-emerald-900 flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              <div>
+                <strong class="font-bold block mb-0.5">Direct Benefit Transfer (DBT) Assurance</strong>
+                Approved tuition fees are remitted directly to the college's approved FRA bank account, while maintenance allowances and food stipends are credited straight to the student's Aadhaar-seeded bank account.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ================= STEP 4: OFFICIAL MAHADBT PORTAL LINK & ACTION BOX ================= -->
+        <div class="bg-slate-100 border-t border-slate-200 p-5 sm:p-7">
+          <div class="bg-gradient-to-r from-orange-50 via-amber-50 to-emerald-50 rounded-2xl p-5 border-2 border-saffron-300 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+            
+            <div class="space-y-1 text-center md:text-left">
+              <div class="inline-flex items-center gap-1.5 text-xs font-extrabold text-saffron-700 uppercase tracking-wide">
+                <span class="w-2 h-2 rounded-full bg-saffron-600 animate-ping"></span>
+                Official Government Portal Action
+              </div>
+              <h4 class="text-base sm:text-lg font-bold text-govnavy-900">
+                Ready to submit your application on MahaDBT?
+              </h4>
+              <p class="text-xs text-slate-600 max-w-lg">
+                Login with your Aadhaar / Username to complete your post-matric scholarship application for the current academic session.
+              </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto shrink-0">
+              <!-- Back button -->
+              <button 
+                id="modal-back-btn" 
+                type="button" 
+                class="w-full sm:w-auto px-4 py-3 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 text-xs font-bold rounded-xl shadow-sm transition flex items-center justify-center gap-1.5"
+              >
+                ← Back to Scholarship List
+              </button>
+
+              <!-- Official MahaDBT Portal Link Button -->
+              <a 
+                href="https://mahadbt.maharashtra.gov.in/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-saffron-600 to-saffron-700 hover:from-saffron-700 hover:to-saffron-800 text-white text-xs sm:text-sm font-extrabold rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2 group text-center"
+              >
+                <span>Apply on Official MahaDBT Portal</span>
+                <svg class="w-4 h-4 group-hover:translate-x-0.5 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-govnavy-950 text-slate-400 text-xs border-t border-govnavy-800 mt-16">
+    <div class="gov-tricolor-strip"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="space-y-2 md:col-span-2">
+          <div class="flex items-center gap-2.5 text-white font-bold text-sm">
+            <span class="w-3 h-3 rounded-full bg-saffron-500"></span>
+            Maharashtra B.Tech Scholarship Portal (MahaDBT Assistant)
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-md">
+            A state-of-the-art Gov-Tech front-end reference for students enrolled in Bachelor of Technology (B.Tech / B.E.) engineering colleges in Maharashtra State.
+          </p>
+          <div class="text-[11px] text-slate-500">
+            Source Data Reference: Higher & Technical Education Department, Tribal Development Department, VJNT/OBC/SBC Welfare Department, Social Justice Department, Government of Maharashtra.
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Official Government Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="https://mahadbt.maharashtra.gov.in/" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1.5">MahaDBT Official Portal ↗</a></li>
+            <li><a href="https://dte.maharashtra.gov.in/" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1.5">Directorate of Technical Education (DTE) ↗</a></li>
+            <li><a href="https://cetcell.mahacet.org/" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1.5">State Common Entrance Test Cell (CET) ↗</a></li>
+            <li><a href="http://sssamiti.org/" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1.5">Fees Regulating Authority (FRA) ↗</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Student Helpdesk & Support</h4>
+          <ul class="space-y-2 text-xs">
+            <li class="text-slate-300">Toll Free: <strong class="text-amber-400">1800 102 5311</strong></li>
+            <li class="text-slate-300">Helpline: <strong class="text-white">022-49150800</strong></li>
+            <li class="text-slate-400 text-[11px]">Timing: Monday to Saturday, 9:00 AM to 6:00 PM</li>
+            <li class="pt-1">
+              <span class="inline-block px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 text-[10px] border border-emerald-800">
+                100% Client-Side Pure JS
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-govnavy-900 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-slate-500 text-[11px]">
+        <div>
+          © 2024–2026 Government of Maharashtra Gov-Tech Assistant Interface. Pure Front-End Reference Architecture.
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#top" class="hover:text-white transition">Back to Top ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast Notification element for copy checklist -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-govnavy-900 text-white text-xs px-4 py-3 rounded-xl shadow-2xl flex items-center gap-2 border border-slate-700">
+    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+    <span id="toast-message">Checklist copied to clipboard!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

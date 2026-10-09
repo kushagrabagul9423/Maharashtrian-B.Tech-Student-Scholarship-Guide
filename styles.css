@@ -1,0 +1,159 @@
+/* 
+ * Maharashtra B.Tech Scholarship Portal (MahaDBT Assistant)
+ * Custom Gov-Tech Aesthetic Stylesheet
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-saffron: #E85D04;
+  --color-saffron-dark: #D9480F;
+  --color-saffron-light: #FFF4EC;
+  --color-navy: #0B2545;
+  --color-navy-light: #13315C;
+  --color-navy-accent: #134074;
+  --color-emerald: #059669;
+  --color-emerald-light: #ECFDF5;
+  --color-gold: #D97706;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-marathi {
+  font-family: 'Noto Sans Devanagari', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Gov-Tech Tricolor Top Bar */
+.gov-tricolor-strip {
+  background: linear-gradient(90deg, 
+    #FF671F 0%, 
+    #FF671F 33.33%, 
+    #FFFFFF 33.33%, 
+    #FFFFFF 66.66%, 
+    #046A38 66.66%, 
+    #046A38 100%
+  );
+  height: 4px;
+  width: 100%;
+}
+
+/* Subtle Gov Pattern */
+.gov-bg-pattern {
+  background-color: #0b2545;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Card hover animation */
+.scholarship-card {
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.22s ease;
+}
+
+.scholarship-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px -10px rgba(11, 37, 69, 0.12), 0 6px 12px -4px rgba(11, 37, 69, 0.06);
+}
+
+/* Filter Pill animations */
+.filter-pill {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-pill:hover {
+  transform: translateY(-1px);
+}
+
+.filter-pill.active {
+  box-shadow: 0 4px 14px 0 rgba(232, 93, 4, 0.35);
+}
+
+/* Smooth fade in animation for cards */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInScale 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Modal animations */
+@keyframes modalBackdropFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-backdrop-anim {
+  animation: modalBackdropFade 0.2s ease-out forwards;
+}
+
+.modal-content-anim {
+  animation: modalSlideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Checkbox custom style */
+.checklist-checkbox:checked + label {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+/* Print Optimization */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print, header, footer, #calculator-section, #faq-section, .filter-section {
+    display: none !important;
+  }
+  #scholarship-modal {
+    position: static !important;
+    display: block !important;
+    background: white !important;
+  }
+  .modal-container {
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
